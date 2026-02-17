@@ -1,18 +1,9 @@
-// ══════════════════════════════════════════
-// Anti-Rot Site Config
-// Edit links here — all pages pull from this file
-// ══════════════════════════════════════════
-
 const SITE_CONFIG = {
   // ── Brand ──
   name: 'Anti-Rot',
   tagline: 'Guard Your Attention',
   version: 'Beta 0.4',
 
-  // ── Page URLs ──
-  // Update these if you change hosting or structure
-  // ── Base Path ──
-  // Set to '/' for custom domain, or '/repo-name/' for GitHub Pages
   basePath: '/Antirot_website/',
 
   pages: {
@@ -32,7 +23,7 @@ const SITE_CONFIG = {
     github: 'https://github.com/prshv1',
     twitter: 'https://x.com/prshv07',
     email: 'galaparshva0@gmail.com',
-    domain: 'https://antirot.in',
+    domain: 'https://prshv1.github.io',
   },
 
   // ── API / Backend ──
