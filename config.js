@@ -27,7 +27,7 @@ const SITE_CONFIG = {
 
   // ── External Links ──
   links: {
-    chromeWebStore: 'https://github.com/prshv1/Anti_Rot', // Update when published
+    chromeWebStore: 'https://chromewebstore.google.com/detail/peicgeopikaehdnnaloamfhhikikegan?utm_source=item-share-cb', // Update when published
     linktree: 'https://linktr.ee/prshv1',
     github: 'https://github.com/prshv1',
     twitter: 'https://x.com/prshv07',
