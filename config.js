@@ -1,6 +1,6 @@
 const SITE_CONFIG = {
   // ── Brand ──
-  name: 'Anti-Rot',
+  name: 'AntiRot',
   tagline: 'Guard Your Attention',
   version: 'Beta 0.4',
 
@@ -18,12 +18,18 @@ const SITE_CONFIG = {
 
   // ── External Links ──
   links: {
-    chromeWebStore: 'https://chromewebstore.google.com/detail/anti-rot/peicgeopikaehdnnaloamfhhikikegan', // Update when published
+    chromeWebStore: 'https://chromewebstore.google.com/detail/anti-rot/peicgeopikaehdnnaloamfhhikikegan', // URL slug stays as-is
     linktree: 'https://linktr.ee/prshv1',
     github: 'https://github.com/prshv1',
     twitter: 'https://x.com/prshv07',
     email: 'galaparshva0@gmail.com',
     domain: 'https://prshv1.github.io',
+  },
+
+  // ── Demo Assets ──
+  demo: {
+    video: 'product_demo.mp4',
+    fallbackGif: 'product_demo.gif',
   },
 
   // ── API / Backend ──
@@ -33,7 +39,7 @@ const SITE_CONFIG = {
 
   // ── Legal ──
   legal: {
-    companyName: 'Anti-Rot',
+    companyName: 'AntiRot',
     contactEmail: 'galaparshva0@gmail.com',
     effectiveDate: 'February 2026',
   },

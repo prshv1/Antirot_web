@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════
-   Anti-Rot Website Styles
+   AntiRot Website Styles
    Mirrors the Chrome extension design system
    ══════════════════════════════════════════ */
 
@@ -317,6 +317,26 @@ body::before {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ── Hero Demo ── */
+.hero-demo {
+  margin-top: 48px;
+  max-width: 720px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--border);
+  animation: fadeUp 0.6s ease 0.4s both;
+}
+
+.hero-demo video,
+.hero-demo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
 /* ── Buttons ── */
 .btn {
   display: inline-flex;
@@ -437,6 +457,97 @@ body::before {
   font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+/* ── Competitor Comparison ── */
+.compare-section {
+  padding: 80px 0;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.compare-col {
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.compare-them {
+  background: var(--bg-card);
+}
+
+.compare-us {
+  background: var(--bg-card);
+  border-color: rgba(239, 68, 68, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.compare-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.compare-header {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-them .compare-header {
+  color: var(--text-muted);
+}
+
+.compare-us .compare-header {
+  color: var(--accent);
+}
+
+.compare-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.compare-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.compare-them .compare-list li {
+  color: var(--text-muted);
+}
+
+.compare-them .compare-list svg {
+  color: var(--text-muted);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.compare-us .compare-list li {
+  color: var(--text-primary);
+}
+
+.compare-us .compare-list svg {
+  color: var(--green);
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 4px var(--green-glow));
 }
 
 /* ── Features ── */
@@ -815,6 +926,10 @@ body::before {
     grid-template-columns: 1fr;
   }
 
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -831,6 +946,16 @@ body::before {
 
   .hero-actions .btn {
     justify-content: center;
+  }
+
+  .hero-demo {
+    margin-top: 32px;
+    border-radius: var(--radius);
+  }
+
+  .hero-demo video,
+  .hero-demo img {
+    border-radius: var(--radius);
   }
 
   .section {

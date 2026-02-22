@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Anti-Rot</title>
-  <meta name="description" content="Get in touch with the Anti-Rot team.">
+  <title>Contact — AntiRot</title>
+  <meta name="description" content="Get in touch with the AntiRot team.">
   <meta name="theme-color" content="#0a0a0b">
+
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="AntiRot — Guard Your Attention">
+  <meta property="og:description" content="A Chrome extension that lets you use YouTube without YouTube using you.">
+  <meta property="og:image" content="https://prshv1.github.io/Antirot_website/og-image.png">
+  <meta property="og:url" content="https://prshv1.github.io/Antirot_website/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AntiRot — Guard Your Attention">
+  <meta name="twitter:description" content="A Chrome extension that lets you use YouTube without YouTube using you.">
+  <meta name="twitter:image" content="https://prshv1.github.io/Antirot_website/og-image.png">
+
   <link rel="stylesheet" href="style.css">
   <script src="config.js"></script>
 </head>
@@ -23,7 +35,7 @@
               <polyline points="22 8.5 12 15.5 2 8.5"/>
             </svg>
           </div>
-          <span class="nav-logo-text">Anti-Rot</span>
+          <span class="nav-logo-text">AntiRot</span>
         </a>
 
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -33,7 +45,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#" id="nav-home-link-2">Home</a></li>
           <li><a href="#" id="nav-privacy-link">Privacy</a></li>
-          <li><a href="#" class="nav-cta" id="nav-install-link">Install Free</a></li>
+          <li><a href="#" class="nav-cta" id="nav-install-link">Add to Chrome — It's Free</a></li>
         </ul>
       </div>
     </nav>
@@ -101,7 +113,7 @@
               <polyline points="22 8.5 12 15.5 2 8.5"/>
             </svg>
           </div>
-          <span class="footer-brand">Anti-Rot</span>
+          <span class="footer-brand">AntiRot</span>
         </div>
         <ul class="footer-links" id="footer-links">
           <li><a href="#">Home</a></li>
@@ -140,8 +152,6 @@
       document.getElementById('footer-version').textContent = `© 2026 ${C.name} · ${C.version}`;
 
       // ── Contact Form Handler ──
-      // Since this is GitHub Pages (static), we use mailto as fallback
-      // Replace with a real form backend (Formspree, Getform, etc.) when ready
       const sendBtn = document.getElementById('sendBtn');
       const formStatus = document.getElementById('formStatus');
 
@@ -160,7 +170,7 @@
 
         // Open mailto with prefilled data
         const mailtoBody = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-        const mailtoSubject = subject || 'Anti-Rot Contact Form';
+        const mailtoSubject = subject || 'AntiRot Contact Form';
         const mailtoLink = `mailto:${C.links.email}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`;
         window.location.href = mailtoLink;
 
